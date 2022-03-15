@@ -1,7 +1,7 @@
-HOT TAKES
 BACK END INSTALLATION
 
-You need to install NodeJS 17.0. Then clone the repository and run npm install.
+You need to install NodeJS 17.0. 
+Then clone the repository and run npm install.
 
 Usage
 Run nodemon server for the backend server.
