@@ -5,7 +5,7 @@ const Sauce = require('../models/sauces')
 exports.likeSauce = (req, res, next) => {
   // récupère le champs likes
   const likeStatus = req.body.like
-  // récupère l'id de l'URL
+  // récupère l'id de l'URL (dans bdd)
   const sauceId = req.params.id
   // récupère le userId
   const userId = req.body.userId
@@ -17,7 +17,7 @@ exports.likeSauce = (req, res, next) => {
         { _id: sauceId },
         {
           $inc: { likes: +1 },
-          $push: { usersLiked: req.body.userId },
+          $push: { usersLiked: req.body.userId }, //ajoute le userId dans le tableau usersliked
         },
       )
         .then(() => res.status(201).json({ message: 'Ajout du like !' }))
@@ -29,7 +29,7 @@ exports.likeSauce = (req, res, next) => {
         { _id: sauceId },
         {
           $inc: { dislikes: +1 },
-          $push: { usersDisliked: req.body.userId },
+          $push: { usersDisliked: req.body.userId }, 
         },
       )
         .then(() => res.status(201).json({ message: "Ajout d'un dislike ! " }))
@@ -45,7 +45,7 @@ exports.likeSauce = (req, res, next) => {
               { _id: sauceId },
               {
                 $inc: { likes: -1 },
-                $pull: { usersLiked: userId },
+                $pull: { usersLiked: userId }, //supprime le userId dans le tableau usersliked
               },
             )
               .then(() =>

@@ -1,4 +1,4 @@
-//import de jsonwebtoken
+//import de jsonwebtoken (verifie token)
 const jwt = require('jsonwebtoken');
 
 module.exports = (req, res, next) => {
