@@ -2,7 +2,6 @@
 const dotenv = require('dotenv').config()
 const express = require('express')
 const app = express()
-const bodyParser = require('body-parser')
 const cors = require('cors')
 const path = require('path')
 const mongoose = require('mongoose')
@@ -36,7 +35,7 @@ app.use((req, res, next) => {
   next()
 })
 // transforme le body en json objet js utilisable
-app.use(bodyParser.json())
+
 app.use(cors())
 app.use(express.json())
 app.use('/images', express.static(path.join(__dirname, 'images')))
