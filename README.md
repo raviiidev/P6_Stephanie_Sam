@@ -1,20 +1,47 @@
+
+# Projet n°6 : Construire une API sécurisée
+
+Projet professionnel à valider dans le cadre de mon diplôme Développeur Web
+
+Le FRONTEND a déjà été mis en place, nous nous occuperons seulement de la partie BACKEND
+
+
+
+
+## Installation
+
+PREREQUIS : 
+```bash
+Installer Node.js 
+Cloner le repository
+```
+
 BACK END INSTALLATION
 
-You need to install NodeJS 17.0. 
-Then clone the repository and run npm install.
+```bash
+  npm install
+  nodemon server
+```
 
-Usage
-Run nodemon server for the backend server.
+Ouvrez votre navigateur et allez sur : http://localhost:3000
+## Environment Variables
 
-If your browser fails to launch, or shows a 404 error, navigate your browser to http://localhost:3000.
+Dans le fichier .env, vous trouverez les éléments d'origines
 
-DATA BASE
-The data base is provided by MongoDB.
+`DB_USERNAME`
 
-ENVIRONMENTAL VARIABLES
-The file .env provides these environmental variables :
+`DB_PASSWORD`
 
-DB_USERNAME
-DB_PASSWORD
-DB_NAME
+`DB_NAME`
+
+
+
+
+## 🛠 Skills
+Javascript
+
+
+## Authors
+
+- [@raviiidev](https://www.github.com/raviiidev)
 
