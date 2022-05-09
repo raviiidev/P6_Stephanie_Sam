@@ -5,7 +5,10 @@ Projet professionnel à valider dans le cadre de mon diplôme Développeur Web
 
 Le FRONTEND a déjà été mis en place, nous nous occuperons seulement de la partie BACKEND
 
-
+## Compétences évaluées
+- Mettre en œuvre des opérations CRUD de manière sécurisée
+- Implémenter un modèle logique de données conformément à la réglementation
+- Stocker des données de manière sécurisée
 
 
 ## Installation
